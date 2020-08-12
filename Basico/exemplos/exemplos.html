@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="layout/layout.css" rel="stylesheet">
+    <link href="layout/normalize.css" rel="stylesheet">
+    <title>Exercício</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Informações Básicas</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" required id="nome" value="Amanda"><br>
+        
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" style="background-color: wheat; color: grey" id="dataNascimento"><br>
+        
+        <label for="idade">Idade:</label>
+        <input type="number" required id="idade" max="100" min="18"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados de Acesso</legend>
+        <label for="email">E-mail:</label>
+        <input type="email" required id="email"><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" required id="senha"><br>
+        
+    </fieldset>
+    
+        <!--Fieldset agrupa os dados-->
+        <fieldset>
+            <!--Check Box-->
+            <legend>Campos de Seleção</legend>
+            <legend>Check Box</legend>
+            <input type="checkbox" id="humor1" name="humor1" value="Feliz">
+            <label for="humor1">Feliz :D</label><br>
+            <input type="checkbox" id="humor2" name="humor2" value="Raiva">
+            <label for="humor2">Full pistola</label><br>
+            <input type="checkbox" id="humor3" name="humor3" value="Triste">
+            <label for="humor3">Triste tristinho</label><br>
+
+            <!--Radio Button-->
+            <legend>Radio Button</legend>
+            <input type="radio" id="masculino" name="genero" value="Masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="genero" value="Feminino">
+            <label for="feminino">Feminino</label><br>
+            <input type="radio" id="outro" name="genero" value="Outro">
+            <label for="outro">Outro</label><br>
+
+            <!--Select-->
+            <legend>Select</legend>
+            <label form="objeto"></label>
+            <select id="objeto" name="objeto">
+                <option value="cama">Cama</option>
+                <option value="urso">Ursinho</option>
+                <option value="lhama">Lhama</option>
+            </select><br>
+
+            <!--Select Multiple-->
+            <legend>Select Multiple</legend>
+            <label form="objeto"></label>
+            <select id="objeto" name="objeto" multiple>
+                <option value="cama">Cama</option >
+                <option value="urso">Ursinho</option>
+                <option value="lhama">Lhama</option>
+            </select>
+            <br>
+
+            <!--Datalist-->
+            <legend>Datalist</legend>
+            <label for="comodos">Comodos</label>
+            <input list="comodos">
+            <datalist id="comodos">
+                <option value="Banheiro"></option>
+                <option value="Cozinha"></option>
+                <option value="Quarto"></option>
+                <option value="Sala de Estar"></option>
+            </datalist>
+            <br>
+
+            <!--Text Area-->
+            <legend>Textarea</legend>
+            <label for="desricao">Descrição</label><br>
+            <textarea id="descricao" name="descricao" rows="5" cols="20"></textarea>
+            <br>
+
+            <!--Input button-->
+            <script>
+                function ola(){
+                    alert('oooi');
+                }
+            </script>
+            <input type="button" value="Clique em mim" onclick="ola()">
+
+        
+        </fieldset>
+
+        <!--Salva as informações preenchidas-->
+        <input type="submit" style="background-color: mediumorchid; color: whitesmoke;" value="Salvar">
+        <!--Limpa as informações preenchidas-->
+        <input type="reset" style="background-color: tomato; color: thistle;" value="Cancelar"><br>
+    </form>
+    
+</body>
+</html>
