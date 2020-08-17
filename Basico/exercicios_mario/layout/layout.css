@@ -1,0 +1,74 @@
+body{
+    background-color: #34ccfe;
+    font-size: 12px;
+}
+.cabecalho{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.cabecalho, .img-mario{
+    width: 200px;
+    height: 200px;
+}
+.conteudo{
+    margin: 0 auto;
+    width: 210px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px 5px;
+}
+.inputs{
+    width: 98%;
+    margin-bottom: 10px;
+    height: 22px;
+    border: 0;
+}
+.selects{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 22px;
+    border: 0;
+}
+
+.btn{
+    color: white;
+    border: 0;
+    font-size: 12px;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    margin-bottom: 10px;
+}
+.submit{
+    background-color: #2bcb71;
+}
+.cancelar{
+    background-color: #ee3533;
+    margin-bottom: 0px;
+}
+a{
+    text-decoration: none;
+    color: #c6e3eb;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.opcoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	position: relative;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.mensagem{
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-size: 14px;
+}
+/*
+card 200x150
+*/
