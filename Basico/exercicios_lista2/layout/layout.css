@@ -1,0 +1,28 @@
+.welcome{
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+.container{
+    max-width: max-content;
+    margin: 0 auto;
+}
+.container > div{
+    float: left;
+    margin-right: 5px;
+}
+.container div > div{
+    position: relative;
+    right: 100px;
+    text-align: center;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    background-color: pink;
+}
+a:hover{
+    background-color: green;
+}
