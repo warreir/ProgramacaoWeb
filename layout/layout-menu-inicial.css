@@ -49,6 +49,7 @@
 	flex-wrap: wrap;
 }
 /* --------------------------------------------------------- */
+
 .card{
 	width: 20%;
 	height: 150px;
@@ -75,7 +76,8 @@
 	justify-content: center;
 }
 .card .submenu-lista{
-	width: 100%;
+	padding: 0;
+	margin: 0;
 	height: 100%;
 	display: flex;
 	position: relative;
@@ -83,18 +85,20 @@
 	flex-direction: column;
 	justify-content: center;
 }
+.submenu-lista-item{
+	display: flex;
+	position: relative;
+	list-style: none;
+	text-decoration: none;
+	padding: 0;
+    margin: 0 auto;
+	min-width: max-content;
+}
 
 a{
 	text-decoration: none;
 	color: black;
 }
-ul, li{
-	list-style: none;
-	text-decoration: none;
-	padding: 0;
-	margin: 0;
-}
-
 
 .rodape {
 	width: 100%;
