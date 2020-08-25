@@ -1,34 +1,27 @@
-.container{
-    width: 570px;
-    margin: 0 auto;
-    align-items: center;
-    margin-top: 14vh;
-}
-.pesquisa{
-    border-radius: 50px;
-    color:rgb(173, 173, 173);
-    border: 1px solid rgb(190, 190, 190);
+
+
+.pesquisa-footer{
     display: flex;
+    flex-direction: column;
     position: relative;
     align-items: center;
-    justify-content: space-between;
+    margin-top: 30px;
 }
-.pesquisa-item{
-    font-size: 15px;
+.buttons{
+    color: #616161;
+    font-size: 14px;
+}
+button{
+    border: none;
+    background-color: #eeeeeebb;
     padding: 10px 15px;
 }
-.pesquisa-item > i:first-child{
-    margin-right: 20px;
+.pesquisa-footer .link{
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 13px;
 }
-input{
-    border: none;
-    width: 44vh;
-}
-.container img{
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 15px;
-}
+
 
 /* pronto */
 .cabecalho{
@@ -47,6 +40,48 @@ input{
     position: relative;
     top: -10px;
 }
+
+.container{
+    width: 570px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 14vh;
+}
+.pesquisa{
+    border-radius: 50px;
+    color:rgb(173, 173, 173);
+    border: 1px solid rgb(190, 190, 190);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.pesquisa-item{
+    font-size: 15px;
+    padding: 10px 0px;
+}
+.pesquisa > i:first-child{
+    padding-left: 15px;
+}
+.pesquisa-item > i:first-child{
+    margin-right: 20px;
+}
+.pesquisa-item > i:last-child{
+    padding-right: 15px;
+}
+input{
+    border: none;
+    width: 60vh;
+}
+input:focus{
+    outline: none;
+}
+.container img{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
 .rodape{
     color:rgba(0,0,0,.54);
     width: 100%;
