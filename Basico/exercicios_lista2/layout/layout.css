@@ -17,11 +17,13 @@
     text-align: center;
 }
 a:link{
-    color: black;
+    color: #FFF;
     text-decoration: none;
+    background-color: black;
 }
 a:visited{
     background-color: pink;
+    color: red;
 }
 a:hover{
     background-color: green;
