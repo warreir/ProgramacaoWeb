@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            //
+            var altura = [1.7,1.8,1.82,1.73,1.50,1.7,1.8,1.82,1.73,1.50,1.7,1.8,1.82,1.73,1.50];
+            var sexo = ["M","F","F","M","F","M","F","F","M","F","M","F","F","M","F"];
+            
+            function numeroHomens(sexo){
+                var homens = 0;
+                for (let i = 0; i < sexo.length; i++) {
+                    if(sexo[i]==="M"){
+                        homens++;
+                    }
+                }
+                return homens;
+            }
+
+            function maiorMenor(altura){
+                var maior = altura[0];
+                var menor = altura[0];
+
+                for (let i = 0; i < altura.length; i++) {
+                   if(altura[i]>maior){
+                       maior = altura[i];
+                   }
+                   if(altura[i]<menor[i]){
+                       menor = altura[i];
+                   }
+                }
+
+                return [maior, menor];
+            }
+            
+            function mediaMulheres(sexo,altura){
+                var soma=0;
+                var num=0;
+                for (let i = 0; i < sexo.length; i++) {
+                    if(sexo[i]==="F"){
+                        soma += altura[i];
+                        num ++;
+                    }
+                }
+                return (soma/num);
+            }
+
+            document.write("Homens: "+numeroHomens(sexo)+"  -  ");
+            document.write("Maior e menor altura: "+maiorMenor(altura)+"  -  ");
+            document.write("Média da altura das mulheres: "+mediaMulheres(sexo,altura));
+        </script>
+    </head>
+    <body>
+        <a href="../index.html"><input type="button" value="Voltar"></a>
+    </body>
+</html>

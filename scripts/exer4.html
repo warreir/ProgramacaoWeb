@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            var num1 = parseInt(prompt("Numero 1"));
+            var num2 = parseInt(prompt("Numero 2"));
+            var div=0;
+
+            if(num2===0){
+                div=0;
+            }else{
+                div=num1/num2;
+            }
+
+            document.write("<table border='1'><tr><td>Soma</td><td>Produto</td><td>Divisão</td><td>Resto</td></tr>");
+            document.write("<tr><td>"+(num1+num2)+"</td><td>"+(num1*num2)+"</td><td>"+(div)+"</td><td>"+num1%num2+"</td></tr></table>");
+        </script>
+    </head>
+    <body>
+        <a href="../index.html"><input type="button" value="Voltar"></a>
+    </body>
+</html>
