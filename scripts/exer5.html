@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            //
+            var peso = [67,68,82,73,50,77,88,82,73,55];
+            var idade = [13,15,17,18,25,45,65,13,15,17];
+            var sexo = ["M","F","F","M","F","M","F","F","M","F"];
+            
+            function totalMedia(sexo,idade,peso,select){
+                var somaPeso = 0;
+                var somaIdade = 0;
+                var mediaIdade = 0;
+                var qtde = 0;
+
+                for (let i = 0; i < sexo.length; i++) {
+                    if(sexo[i]===select){
+                        qtde++;
+                        somaPeso += peso[i];
+                        somaIdade += idade[i];
+                    }
+                }
+                mediaIdade = somaIdade/qtde;
+
+                return [somaPeso,somaIdade,mediaIdade,qtde]
+            }
+            var homens = totalMedia(sexo,idade,peso,"M")
+            var mulheres = totalMedia(sexo,idade,peso,"F")
+            document.write(homens[3]+" Homens <br> Peso: "+homens[0]+" - ");
+            document.write("Idade: "+homens[1]+" - ");
+            document.write("Media Idade: "+homens[2]+"<br><br>");
+            document.write(mulheres[3]+" Mulheres <br> Peso: "+mulheres[0]+" - ");
+            document.write("Idade: "+mulheres[1]+" - ");
+            document.write("Media Idade: "+mulheres[2]+"<br>");
+        </script>
+    </head>
+    <body>
+        <a href="../index.html"><input type="button" value="Voltar"></a>
+    </body>
+</html>

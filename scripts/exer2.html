@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            //
+            var idade = [13,15,17,18,25,45,65,13,15,17,18,25,45,65,13];
+            var opiniao = [3,2,3,1,2,3,2,3,1,2,3,2,3,1,2];
+            
+            function mediaOtimo(opiniao,idade){
+                var soma = 0;
+                var qtde = 0;
+                for (let i = 0; i < opiniao.length; i++) {
+                    if(opiniao[i]===3){
+                       soma +=idade[i];
+                       qtde++;
+                    }
+                }
+                return (soma/qtde);
+            }
+
+
+            function qtdeRegular(opiniao){
+                var qtde = 0;
+
+                for (let i = 0; i < opiniao.length; i++) {
+                    if(opiniao[i]===1){
+                       qtde++;
+                    }
+                }
+                return qtde;
+            }
+
+            function porcentagemBom(opiniao){
+                var qtde = 0;
+
+                for (let i = 0; i < opiniao.length; i++) {
+                    if(opiniao[i]===2){
+                       qtde++;
+                    }
+                }
+                return (qtde/opiniao.length)*100;
+            }
+
+            document.write("Media de idade de votos otimos: "+mediaOtimo(opiniao,idade)+"  -  ");
+            document.write("Quantidade de regular: "+qtdeRegular(opiniao)+"  -  ");
+            document.write("Percentagem Bom: "+porcentagemBom(opiniao)+"%");
+        </script>
+    </head>
+    <body>
+        <a href="../index.html"><input type="button" value="Voltar"></a>
+    </body>
+</html>

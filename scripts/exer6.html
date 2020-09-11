@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            //
+            var salario = parseInt(prompt("Salário"));
+
+            function calculaAumento(salario){
+                if(salario<=280){
+                    return salario*0.2;
+                    }else if((salario>280)&&(salario<=700)){
+                        return salario*0.15;
+                        }else if((salario>700)&&(salario<=1500)){
+                            return salario*0.1;
+                            }else if((salario>1500)){
+                                return salario*0.05;
+                            }
+            }
+            var aumento = calculaAumento(salario);
+            document.write("Salario Atual: "+salario);
+            document.write("<br>Aumento: "+aumento);
+            document.write("<br>Salario Novo: "+(salario+aumento)+"<br>");
+
+        </script>
+    </head>
+    <body>
+        <a href="../index.html"><input type="button" value="Voltar"></a>
+    </body>
+</html>
